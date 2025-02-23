@@ -1,1 +1,51 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+<title>Birthdantle</title>
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+ 
+<h1><span id="The" class="">___</span> <span id="Lumineers" class="">_________</span></h1>
+<p><span id="The" class="">___</span> <span id="Lumineers" class="">_________</span> <span id="are" class="">___</span> <span id="an" class="">__</span> <span id="American" class="">________</span> <span id="alternative" class="">___________</span> <span id="folk" class="">____</span> <span id="band" class="">____</span> <span id="based" class="">_____</span> <span id="in" class="">__</span> <span id="Denver" class="">______</span>, <span id="Colorado" class="">________</span>.
+<span id="The" class="">___</span> <span id="founding" class="">________</span> <span id="members" class="">_______</span> <span id="are" class="">___</span> <span id="Wesley" class="">______</span> <span id="Schultz" class="">_______</span> (<span id="lead" class="">____</span> <span id="vocals" class="">______</span>, <span id="guitar" class="">______</span>) <span id="and" class="">___</span> <span id="Jeremiah" class="">________</span> <span id="Fraites" class="">_______</span> (<span id="drums" class="">_____</span>, <span id="percussion" class="">__________</span>, <span id="piano" class="">_____</span>).
+<span id="Schultz" class="">_______</span> <span id="and" class="">___</span> <span id="Fraites" class="">_______</span> <span id="began" class="">_____</span> <span id="writing" class="">_______</span> <span id="and" class="">___</span> <span id="performing" class="">__________</span> <span id="together" class="">________</span> <span id="in" class="">__</span> <span id="2005" class="">____</span>.
+<span id="The" class="">___</span> <span id="Lumineers" class="">_________</span> <span id="emerged" class="">_______</span>  <span id="as" class="">__</span>  <span id="one" class="">___</span>  <span id="of" class="">__</span>  <span id="the" class="">___</span>  <span id="most" class="">___</span>  <span id="popular" class="">_______</span>  <span id="folk" class="">____</span>- <span id="rock" class="">____</span>/ <span id="Americana" class="">________</span>  <span id="artists" class="">_______</span>  <span id="during" class="">______</span>  <span id="the" class="">___</span>  <span id="revival" class="">_______</span>  <span id="of" class="">__</span>  <span id="those" class="">_____</span>  <span id="genres" class="">______</span>,  <span id="their" class="">_____</span>  <span id="popularity" class="">__________</span>  <span id="growing" class="">_______</span>  <span id="in" class="">__</span>  <span id="the" class="">___</span>  <span id="2010s" class="">____</span>.
+<span id="They" class="">___</span> <span id="are" class="">___</span> <span id="known" class="">_____</span> <span id="for" class="">___</span> <span id="their" class="">_____</span> <span id="energetic" class="">________</span> <span id="live" class="">____</span> <span id="shows" class="">_____</span> <span id="and" class="">___</span> <span id="several" class="">_______</span> <span id="international" class="">_____________</span> <span id="hit" class="">___</span> <span id="singles" class="">_______</span>, <span id="including" class="">_________</span> "<span id="Ho" class="">__</span> <span id="Hey" class="">___</span>", "<span id="Stubborn" class="">________</span> <span id="Love" class="">____</span>", "<span id="Ophelia" class="">_______</span>", "<span id="Angela" class="">______</span>" <span id="and" class="">___</span> "<span id="Cleopatra" class="">_________</span>.
+<span id="The" class="">___</span> <span id="band" class="">___</span> <span id="has" class="">___</span> <span id="become" class="">______</span> <span id="one" class="">___</span> <span id="of" class="">__</span> <span id="the" class="">___</span> <span id="top" class="">___</span> <span id="touring" class="">_______</span> <span id="bands" class="">_____</span> <span id="in" class="">__</span> <span id="the" class="">___</span> <span id="United" class="">______</span> <span id="States" class="">______</span> <span id="and" class="">___</span> <span id="is" class="">__</span> <span id="also" class="">____</span> <span id="popular" class="">_______</span> <span id="in" class="">___</span> <span id="other" class="">_____</span> <span id="countries" class="">_________</span>.
+<span id="bloc" class="">____</span>.</p>
+ 
+<input type="text" id="myInput" value="">
+<button id="myButton">Valider</button>
+ 
+<script>
+ 
+$('#myButton').click(function() {
+    var value = $('#myInput').val();
+    switch (value) {
+        case 'my' || 'My':
+            $('#my').text(value);
+            break;
+        case 'first':
+            $('#first').text(value);
+            break;
+        case 'paragraph':
+            $('#bloc').addClass('proche');
+            $('#bloc').text(value);
+            break;
+    }
+});
+ 
+</script>
+ 
+<style>
+.proche {
+    background-color: yellow;
+}
+ 
+</style>
+</body>
+</html>
