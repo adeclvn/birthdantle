@@ -16,7 +16,7 @@
 <span class="The">___</span> <span class="Lumineers" class="">_________</span> <span id="emerged" class="">_______</span>  <span id="as" class="">__</span>  <span class="one" class="">___</span>  <span class="of" class="">__</span>  <span class="the">___</span>  <span id="most" class="">___</span>  <span id="popular" class="">_______</span>  <span class="folk" class="">____</span>- <span id="rock" class="">____</span>/ <span id="Americana" class="">________</span>  <span id="artists" class="">_______</span>  <span id="during" class="">______</span>  <span class="the">___</span>  <span id="revival" class="">_______</span>  <span id="of" class="">__</span>  <span id="those" class="">_____</span>  <span id="genres" class="">______</span>,  <span class="their" class="">_____</span>  <span id="popularity" class="">__________</span>  <span id="growing" class="">_______</span>  <span class="in" class="">__</span>  <span class="the">___</span>  <span id="2010s" class="">____</span>.
 <span id="They" class="">___</span> <span class="are" class="">___</span> <span id="known" class="">_____</span> <span id="for" class="">___</span> <span class="their" class="">_____</span> <span id="energetic" class="">________</span> <span id="live" class="">____</span> <span id="shows" class="">_____</span> <span class="and" class="">___</span> <span id="several" class="">_______</span> <span id="international" class="">_____________</span> <span id="hit" class="">___</span> <span id="singles" class="">_______</span>, <span id="including" class="">_________</span> "<span id="Ho" class="">__</span> <span id="Hey" class="">___</span>", "<span id="Stubborn" class="">________</span> <span id="Love" class="">____</span>", "<span id="Ophelia" class="">_______</span>", "<span id="Angela" class="">______</span>" <span class="and" class="">___</span> "<span id="Cleopatra" class="">_________</span>.
 <span class="the">___</span> <span class="band" class="">___</span> <span id="has" class="">___</span> <span id="become" class="">______</span> <span class="one" class="">___</span> <span class="of" class="">__</span> <span class="the">___</span> <span id="top" class="">___</span> <span id="touring" class="">_______</span> <span id="bands" class="">_____</span> <span class="in" class="">__</span> <span class="the">___</span> <span id="United" class="">______</span> <span id="States" class="">______</span> <span class="and" class="">___</span> <span id="is" class="">__</span> <span id="also" class="">____</span> <span id="popular" class="">_______</span> <span class="in" class="">___</span> <span id="other" class="">_____</span> <span id="countries" class="">_________</span>.
-<span id="bloc" class="">____</span>.</p>
+</p>
 
 <input type="text" id="myInput" value="">
 <button id="myButton">Valider</button>
@@ -41,14 +41,18 @@ $('#myButton').click(function() {
         case 'a':
             $('#an').text('an');
             break;
-        case 'american':
+        case 'american' || 'america':
             $('#American').text('American');
+            $('#Denver').addClass('proche');
+            $('#Colorado').text(value);
             break;
         case 'alternative':
             $('#alternative').text(value);
             break;
         case 'folk':
             $('.folk').text(value);
+            $('#rock').addClass('proche');
+            $('#rock').text(value);
             break;
         case 'band':
             $('.band').text(value);
@@ -123,6 +127,8 @@ $('#myButton').click(function() {
             break;
         case 'rock':
             $('#rock').text(value);
+            $('.folk').addClass('proche');
+            $('.folk').text(value);
             break;
         case 'artist':
             $('#artists').text('artists');
@@ -132,6 +138,10 @@ $('#myButton').click(function() {
             break;
         case 'genre':
             $('#genres').text('genres');
+            $('.folk').addClass('proche');
+            $('.folk').text(value);
+            $('#rock').addClass('proche');
+            $('#rock').text(value);
             break;
         case 'their':
             $('.their').text(value);
@@ -208,6 +218,8 @@ $('#myButton').click(function() {
             break;
         case 'other':
             $('#other').text(value);
+            $('#alternative').addClass('proche');
+            $('#alternative').text(value);
             break;
         case 'country':
             $('#countries').text('countries');
@@ -216,10 +228,27 @@ $('#myButton').click(function() {
             $('#international').addClass('proche');
             $('#international').text(value);
             break;
-        case 'paragraph':
-            $('#bloc').addClass('proche');
-            $('#bloc').text(value);
+        case 'europe':
+            $('#American').addClass('proche');
+            $('#American').text(value);
             break;
+        case 'continent':
+            $('#American').addClass('proche');
+            $('#American').text(value);
+            break;
+        case 'pop':
+            $('.folk').addClass('proche');
+            $('.folk').text(value);
+            $('#rock').addClass('proche');
+            $('#rock').text(value);
+            break;
+        case 'indie':
+            $('#genres').text('genres');
+            $('.folk').addClass('proche');
+            $('.folk').text(value);
+            $('#rock').addClass('proche');
+            $('#rock').text(value);
+        
     }
 });
 
