@@ -42,11 +42,13 @@ $('#myButton').click(function() {
             $('#an').text('an');
             break;
         case 'american' || 'america':
+            $('#American').removeClass('proche');
             $('#American').text('American');
             $('#Denver').addClass('proche');
-            $('#Colorado').text(value);
+            $('#Denver').text(value);
             break;
         case 'alternative':
+            $('#alternative').removeClass('proche');
             $('#alternative').text(value);
             break;
         case 'folk':
@@ -54,6 +56,7 @@ $('#myButton').click(function() {
             $('.folk').text(value);
             break;
         case 'band':
+            $('.band').removeClass('proche');
             $('.band').text(value);
             $('#bands').text('bands');
             break;
@@ -68,26 +71,34 @@ $('#myButton').click(function() {
             break;
         case 'member':
             $('#members').text('members');
+            $('#together').addClass('proche');
+            $('#together').text(value);
             break;
         case 'lead':
+            $('#lead').removeClass('proche');
             $('#lead').text(value);
             break;
         case 'vocal':
+            $('#vocals').removeClass('proche');
             $('#vocals').text('vocals');
             break;
         case 'guitar':
+            $('#guitar').removeClass('proche');
             $('#guitar').text(value);
             break;
         case 'and':
             $('.and').text(value);
             break;
         case 'drum':
+            $('#drums').removeClass('proche');
             $('#drums').text('drums');
             break;
         case 'percussion':
+            $('#percussion').removeClass('proche');
             $('#percussion').text(value);
             break;
         case 'piano':
+            $('#piano').removeClass('proche');
             $('#piano').text(value);
             break;
         case 'begin':
@@ -97,9 +108,11 @@ $('#myButton').click(function() {
             $('#writing').text('writing');
             break;
         case 'perform':
+            $('#performing').removeClass('proche');
             $('#performing').text('performing');
             break;
         case 'together':
+            $('#together').removeClass('proche');
             $('#together').text(value);
             break;
         case '2005':
@@ -121,7 +134,9 @@ $('#myButton').click(function() {
             $('#most').text(value);
             break;
         case 'popular':
+            $('#popular').removeClass('proche');
             $('#popular').text(value);
+            $('#popularity').removeClass('proche');
             $('#popularity').text('popularity');
             break;
         case 'rock':
@@ -135,6 +150,7 @@ $('#myButton').click(function() {
             $('#during').text(value);
             break;
         case 'genre':
+            $('#genres').removeClass('proche');
             $('#genres').text('genres');
             $('.folk').addClass('proche');
             $('.folk').text(value);
@@ -142,6 +158,7 @@ $('#myButton').click(function() {
             $('#rock').text(value);
             break;
         case 'their':
+            $('.their').removeClass('proche');
             $('.their').text(value);
             break;
         case 'grow':
@@ -151,46 +168,56 @@ $('#myButton').click(function() {
             $('#2010s').text(value);
             break;
         case 'they':
+            $('#They').removeClass('proche');
             $('#They').text(value);
+            $('.their').removeClass('proche');
             $('.their').text('their');
             break;
         case 'know':
             $('#known').text('known');
             break;
         case 'energetic':
+            $('#energetic').removeClass('proche');
             $('#energetic').text(value);
             break;
         case 'live':
+            $('#live').removeClass('proche');
             $('#live').text(value);
             break;
         case 'show':
+            $('#show').removeClass('proche');
             $('#shows').text('shows');
             break;
         case 'several':
             $('#several').text(value);
             break;
         case 'international':
+            $('#international').removeClass('proche');
             $('#international').text(value);
             break;
         case 'single':
+            $('#singles').removeClass('proche');
             $('#singles').text('singles');
             break;
         case 'include':
             $('#including').text('including');
             break;
         case 'ho':
-            $('#Ho').text(value);
+            $('#Ho').text('Ho');
             break;
         case 'hey':
-            $('#Hey').text(value);
+            $('#Hey').removeClass('proche');
+            $('#Hey').text('Hey');
             break;
         case 'Ophelia':
             $('#Ophelia').text(value);
             break;
         case 'stubborn':
+            $('#Stubborn').removeClass('proche');
             $('#Stubborn').text(value);
             break;
         case 'Love':
+            $('#Love').removeClass('proche');
             $('#Love').text(value);
             break;
         case 'have':
@@ -235,17 +262,40 @@ $('#myButton').click(function() {
             $('#American').text(value);
             break;
         case 'pop':
+            $('#genres').addClass('proche');
+            $('#genres').text('genres');
             $('.folk').addClass('proche');
             $('.folk').text(value);
             $('#rock').addClass('proche');
             $('#rock').text(value);
             break;
         case 'indie':
-            $('#genres').text('genres');
+            $('#genres').addClass('proche');
+            $('#genres').text('value');
             $('.folk').addClass('proche');
             $('.folk').text(value);
             $('#rock').addClass('proche');
             $('#rock').text(value);
+            break;
+        case 'music':
+            $('#genres').addClass('proche');
+            $('#genres').text('value');
+            $('.folk').addClass('proche');
+            $('.folk').text(value);
+            $('#rock').addClass('proche');
+            $('#rock').text(value);
+            $('.band').addClass('proche');
+            $('.band').text(value);
+            $('#bands').addClass('proche');
+            $('#bands').text(value);
+            $('#guitar').addClass('proche');
+            $('#guitar').text(value);
+            $('#artists').addClass('proche');
+            $('#artists').text(value);
+            $('#genres').addClass('proche');
+            $('#genres').text(value);
+            break;
+            
         
     }
 });
