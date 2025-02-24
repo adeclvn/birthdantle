@@ -50,6 +50,7 @@ $('#myButton').click(function() {
             $('#alternative').text(value);
             break;
         case 'folk':
+            $('.folk').removeClass('proche');
             $('.folk').text(value);
             $('#rock').addClass('proche');
             $('#rock').text(value);
@@ -126,6 +127,7 @@ $('#myButton').click(function() {
             $('#popularity').text('popularity');
             break;
         case 'rock':
+            $('#rock').removeClass('proche');
             $('#rock').text(value);
             $('.folk').addClass('proche');
             $('.folk').text(value);
