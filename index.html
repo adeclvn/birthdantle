@@ -29,7 +29,7 @@ $('#myButton').click(function() {
     switch (value) {
         case 'the' || 'The':
             $('.the').text(value);
-            $('.The').text(value);
+            $('.The').text('The');
             break;
         case 'lumineers' || 'Lumineers':
             $('.Lumineers').text('Lumineers');
@@ -42,7 +42,7 @@ $('#myButton').click(function() {
             $('#an').text('an');
             break;
         case 'american':
-            $('#American').text(value);
+            $('#American').text('American');
             break;
         case 'alternative':
             $('#alternative').text(value);
@@ -211,6 +211,10 @@ $('#myButton').click(function() {
             break;
         case 'country':
             $('#countries').text('countries');
+            $('#American').addClass('proche');
+            $('#American').text(value);
+            $('#international').addClass('proche');
+            $('#international').text(value);
             break;
         case 'paragraph':
             $('#bloc').addClass('proche');
