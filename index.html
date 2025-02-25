@@ -28,7 +28,8 @@ $('#myButton').click(function() {
     console.log('clicked');
     var value = $('#myInput').val();
     switch (value) {
-        case 'the' || 'The':
+        case 'the':
+        case 'The':
             $('.the').text(value);
             $('.The').text('The');
             break;
